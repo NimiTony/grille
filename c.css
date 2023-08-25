@@ -1,0 +1,156 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+}
+h3::first-letter{
+    color: blue;
+    font-size: 26px;
+}
+nav ul{
+    padding-top: 5px;
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+a:hover{
+    box-shadow: 0 1px rgb(255, 136, 0);
+    transition: 1s;
+}
+.footer{
+    margin-top: 20%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+li:active {
+    transform: translateY(3px);
+    background-color: rgb(255, 136, 0) ;
+}
+nav ul li a{
+   
+    text-decoration: none;
+    color: white;
+    
+}
+h3{
+    color: white; 
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.nimi{
+    background-color: rgb(255, 136, 0);
+    height: 450px;
+}
+.grid{
+    display: grid;
+    gap: 5%;
+    grid-template-columns: auto auto auto;
+    padding: 7%;
+}
+.grid >div{
+    text-align: center;
+}
+.grid2{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: auto auto auto auto;
+    margin: 2%;
+}
+.grid2 >div{
+    background-color: white;
+    padding: 2%;
+    text-align: justify;
+    box-shadow: 0 9px 8px 0 silver,0 9px 8px 0 silver;
+    margin-bottom: 5%;
+
+}
+input[type="submit"]{
+    background-color:rgb(255, 136, 0) ;
+    padding: 2% 30%;
+    width: 100%;
+    border: solid transparent;
+    border-radius: 4%;
+}
+.espace{
+    height: 400px;
+}
+.grid3 >div{
+    text-align: center;
+    margin: 0 7%;
+    padding: 3%;
+}
+
+
+
+
+/* --------------      Tablette      ---------------    */
+@media (max-width:1200px) {
+    
+    .grid2{
+        display: grid;
+        gap: 2%;
+        grid-template-columns:  auto auto;
+        margin: 2%;
+    }
+    .grid{
+        display: grid;
+        gap:2%;
+        grid-template-columns: auto auto;
+        padding: 3%;
+    }
+    .grid >div{
+        text-align: justify;
+        margin-bottom: 4%;
+    }
+    .espace{
+        height: 900px;
+    }
+}
+
+
+
+/* --------------      phone       ---------------    */
+@media (max-width:560px) {
+    
+    .grid2{
+        display: grid;
+        gap: 2%;
+        grid-template-columns:  auto;
+        margin: 2%;
+    }
+    .grid{
+        display: grid;
+        gap:2%;
+        grid-template-columns: auto;
+        padding: 3%;
+    }
+    .grid >div{
+        text-align: justify;
+        margin-bottom: 4%;
+    }
+    .espace{
+        height: 2100px;
+    }
+    
+}
+@media (max-width:500px) {
+    
+    .espace{
+        height: 2000px;
+    }
+    
+}
